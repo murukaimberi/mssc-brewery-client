@@ -16,7 +16,7 @@ import java.util.UUID;
  * created on 2023/02/18 at 19:52:52
  */
 @Component
-@ConfigurationProperties(prefix = "afrikatek.brewery")
+@ConfigurationProperties(prefix = "afrikatek.brewery", ignoreUnknownFields = false)
 public class BreweryClient {
     public final String BEER_PATH_V1 = "/api/v1/beer";
     private String apiHost;
